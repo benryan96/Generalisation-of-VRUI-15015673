@@ -129,6 +129,11 @@ namespace VRStandardAssets.Utils
                 VRInteractiveItem interactible = hit.collider.GetComponent<VRInteractiveItem>(); //attempt to get the VRInteractiveItem on the hit object
                 m_CurrentInteractible = interactible;
 
+                if(interactible)
+                {
+                    worldEndPoint = hit.point;
+                }
+
                 // If we hit an interactive item and it's not the same as the last interactive item, then call Over
                 if (interactible && interactible != m_LastInteractible)
                     interactible.Over(); 
@@ -154,7 +159,13 @@ namespace VRStandardAssets.Utils
 
                 // Position the reticle at default distance.
                 if (m_Reticle)
-                    m_Reticle.SetPosition();
+                    m_Reticle.SetPosition(ray.origin, ray.direction);
+            }
+
+            if(ControllerIsConnected &&m_LineRenderer != null)
+            {
+                m_LineRenderer.SetPosition(0, worldStartPoint);
+                m_LineRenderer.SetPosition(1, worldEndPoint);
             }
         }
 

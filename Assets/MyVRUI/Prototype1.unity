@@ -1420,9 +1420,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ffebc012055484b4899e163803755608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LineRenderer: {fileID: 0}
+  m_LineRenderer: {fileID: 729858142}
   ShowLineRenderer: 1
-  m_trackingSpace: {fileID: 0}
+  m_trackingSpace: {fileID: 993057712}
   m_Camera: {fileID: 273628955}
   m_ExclusionLayers:
     serializedVersion: 2
