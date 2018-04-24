@@ -14,7 +14,6 @@ namespace VRStandardAssets.Examples
         [SerializeField] private VRInteractiveItem m_InteractiveItem;
         [SerializeField] private Renderer m_Renderer;
 
-
         private void Awake ()
         {
             m_Renderer.material = m_NormalMaterial;

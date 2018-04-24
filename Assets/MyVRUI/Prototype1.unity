@@ -3079,7 +3079,7 @@ GameObject:
   - component: {fileID: 1330172225}
   - component: {fileID: 1330172224}
   m_Layer: 5
-  m_Name: Handle
+  m_Name: Green Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3449,7 +3449,7 @@ GameObject:
   - component: {fileID: 1407094719}
   - component: {fileID: 1407094718}
   m_Layer: 5
-  m_Name: Handle
+  m_Name: Blue Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4969,8 +4969,9 @@ GameObject:
   - component: {fileID: 1905829347}
   - component: {fileID: 1905829346}
   - component: {fileID: 1905829345}
+  - component: {fileID: 1905829348}
   m_Layer: 5
-  m_Name: Handle
+  m_Name: Red Handle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4983,7 +4984,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1905829343}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.3}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1609516492}
@@ -4991,7 +4992,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0.7, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!58 &1905829345
@@ -5042,6 +5043,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1905829343}
+--- !u!114 &1905829348
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1905829343}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fea6f8eea666334aaf9869ad8f7bcda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1931611981
 GameObject:
   m_ObjectHideFlags: 0
@@ -5376,9 +5388,9 @@ GameObject:
   - component: {fileID: 2144451907}
   - component: {fileID: 2144451912}
   - component: {fileID: 2144451911}
-  - component: {fileID: 2144451910}
   - component: {fileID: 2144451909}
   - component: {fileID: 2144451908}
+  - component: {fileID: 2144451910}
   m_Layer: 5
   m_Name: Red Slider
   m_TagString: Untagged
@@ -5416,16 +5428,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 2144451906}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d755e68cd92c18147b4068496a88db4f, type: 3}
+  m_Script: {fileID: 11500000, guid: a1efb433111a5ec44914a5360cd32310, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_NormalMaterial: {fileID: 2100000, guid: 33af27359b49eda48829e2c0bf1e12b8, type: 2}
+  m_NormalMaterial: {fileID: 2100000, guid: c884e96a90083ac4c9505aaa2f1ea97c, type: 2}
   m_OverMaterial: {fileID: 2100000, guid: 33af27359b49eda48829e2c0bf1e12b8, type: 2}
-  m_ClickedMaterial: {fileID: 2100000, guid: bb5b02dca4e40024a8985968dcbb168b, type: 2}
+  m_ClickedMaterial: {fileID: 2100000, guid: 36ac08bf8a2d0ff4a9546100c0139088, type: 2}
   m_DoubleClickedMaterial: {fileID: 2100000, guid: 6c24bafebfdd8d5409c9b756aad7b191,
     type: 2}
   m_InteractiveItem: {fileID: 2144451910}
   m_Renderer: {fileID: 437125889}
+  m_HRenderer: {fileID: 0}
+  mySlider: {fileID: 2144451912}
 --- !u!65 &2144451909
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5436,8 +5450,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 159.7937, y: 13.622012, z: 2.6299222}
-  m_Center: {x: 0.41983655, y: -0.77671605, z: -0.8149591}
+  m_Size: {x: 159.5052, y: 13.622012, z: 1.9559962}
+  m_Center: {x: 0.56406504, y: -0.77671605, z: -1.3422815}
 --- !u!114 &2144451910
 MonoBehaviour:
   m_ObjectHideFlags: 0
