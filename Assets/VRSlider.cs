@@ -19,6 +19,7 @@ public class VRSlider : MonoBehaviour {
     private void Awake()
     {
         m_Renderer.material = m_NormalMaterial;
+        m_HRenderer.material = m_NormalMaterial;
     }
 
 
@@ -53,7 +54,7 @@ public class VRSlider : MonoBehaviour {
     private void HandleOut()
     {
         Debug.Log("Show out state");
-        m_Renderer.material = m_NormalMaterial;
+        m_HRenderer.material = m_NormalMaterial;
     }
 
 
@@ -62,7 +63,9 @@ public class VRSlider : MonoBehaviour {
     {
         Debug.Log("Show click state");
 
-        m_Renderer.material = m_ClickedMaterial;
+        mySlider.value++;
+
+        m_HRenderer.material = m_ClickedMaterial;
     }
 
 
@@ -70,6 +73,9 @@ public class VRSlider : MonoBehaviour {
     private void HandleDoubleClick()
     {
         Debug.Log("Show double click");
+
+        mySlider.value--;
+
         m_Renderer.material = m_DoubleClickedMaterial;
     }
 }
