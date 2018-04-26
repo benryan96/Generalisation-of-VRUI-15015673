@@ -1,4 +1,4 @@
-# Generalisation-of-VRUI-15015673
+# Design-for-an-Ergonomic-Mobile-User-Interface-Paradigm-for-Virtual Reality
 Student ID: 15015673
 Student Name: Ben Ryan
 
